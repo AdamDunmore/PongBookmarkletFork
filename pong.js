@@ -1,5 +1,5 @@
 javascript: (function () {
-  //Stolen from https://github.com/Legend7269/Bookmarklets
+
   
   var me = document.createElement("div");
   var body = document.getElementsByTagName("body")[0];
