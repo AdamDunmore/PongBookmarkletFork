@@ -163,7 +163,7 @@ function move() {
   }
 }
 function bounce() {
-  if (xpos >= 1336) {
+  if (xpos >= 1336) { //Bot loses
     xpos =
       -99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
     clearInterval(bounce);
@@ -176,7 +176,7 @@ function bounce() {
     clearInterval(colliding);
     alert("game over. you win");
   }
-  if (xpos <= 0) {
+  if (xpos <= 0) { //Player loses
     xpos = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
     clearInterval(bounce);
     ball.parentNode.removeChild(ball);
@@ -187,6 +187,8 @@ function bounce() {
     clearInterval(movep2);
     clearInterval(colliding);
     alert("game over. you lose");
+    ballspeed = 3;
+    ymove = startnum;
   }
   if (ypos >= 635) {
     ymove = ymove * -1;
