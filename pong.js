@@ -20,7 +20,7 @@ javascript: (function () {
   me.style.cursor = "pointer";
   me.id = "me";
   me.style.display = "circle";
-  me.innerText = "by dragonmaster73101";
+  me.innerText = "stolen from dragonmaster73101";
   document.getElementById("me").addEventListener("click", function () {
     window.open("https://github.com/dragon731012");
   });
